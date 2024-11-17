@@ -116,21 +116,21 @@ gap: 5rem;
     padding-top: 20px;
     text-align: center;
 }
-.forms .input-box{
+.forms .boxes{
     width: 460px;
     height: 56px; 
     padding-left:40px ;
     margin: 8px;
 }
 
-.input-box input{
+.boxes input{
       width: 60%;
       height: 60%;
       border: none;
       background-color: white;
       border-radius: 2px;
 }
-.input-box input::placeholder{
+.boxes input::placeholder{
     color: brown;
     font-weight: 600;
 }
