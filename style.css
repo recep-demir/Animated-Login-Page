@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+body {
+    background-color: #21d4fd;
+    color: brown;
+
+  }
+.big-image{
+    background-image:url(./images/bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index:-3;
+    display: flex;
+    
+
+}
+
+
+.girl img{
+    width: 300px;
+    
+}
+
+.trees{
+    background-image: url(./images/trees.png);
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:100%;
+    z-index: 3;
+    border: 2px solid red;
+    width: 100%;
+    z-index:-1;
+
+}
+
+
+
+
+
+
+.left,
+.middle,
+.right{
+    
+    display: flex;
+    justify-content: center;
+}
+.left{
+
+gap: 5rem;
+}
+.middle{
+ 
+}
+.right{
+    gap: 5rem;
+}
+.leafs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.leaf{
+    animation: leaf 3s ease-in infinite;
+
+}
+.girl{
+    position: absolute;
+    right:0px;
+    bottom: 350px;
+    z-index: -2;
+    animation-name: girl;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+@keyframes girl{
+   
+   100%{
+       transform: translatex(-500%);
+   }
+
+}
+@keyframes leaf{
+    0%{ 
+        transform: translateY(0);
+   }
+   100%{
+       transform: translateY(130%);
+   }
+}
+
+
+.container{
+    
+    width: 380px;
+    height: 340px;
+    border: 2px solid rgba(178, 165, 165, 0.327); 
+    border-radius: 16px;
+    box-shadow: 10px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(18px);
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    }
+    
+.container h1{
+    text-align: center;
+}
+.container .input-box{
+    width: 460px;
+    height: 56px; 
+    padding-left:40px ;
+    margin: 8px;
+}
+
+.input-box input{
+      width: 60%;
+      height: 60%;
+      border: none;
+      background-color: white;
+      border-radius: 2px;
+}
+.input-box input::placeholder{
+    color: brown;
+    font-weight: 600;
+}
+ 
+.container button{
+    background-color: brown;
+    width: 282px;
+    height: 38px; 
+    border: none;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 2px;
+    margin-left: 48px;
+    
+}
+.container .forget-pass{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.forget-pass a{
+    color: brown;
+}
+
