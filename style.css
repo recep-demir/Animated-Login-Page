@@ -71,7 +71,7 @@ gap: 5rem;
 .girl{
     position: absolute;
     right:0px;
-    bottom: 350px;
+    bottom: 200px;
     z-index: -2;
     animation-name: girl;
     animation-duration: 10s;
